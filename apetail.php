@@ -1,6 +1,6 @@
 <?
 /*
-Plugin Name: ApeTail Communication System
+Plugin Name: ApeTail
 Plugin URI: https://fundaria.com/ApeTail
 Description: Custom public chats under posts, private and closed group chats. Stream with filters, direct replies with sub-context flows. Advanced communications for a web project.
 Version: 1.0.0
