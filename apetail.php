@@ -150,7 +150,7 @@ class ApeTail {
     function button_settings_object_html(){
         $options = get_option('apetail_settings_options'); ?>
         <textarea id="button_settings_object" name="apetail_settings_options[button_settings_object]">
-            <?php echo isset($options['button_settings_object']) ? esc_textarea($options['button_settings_object']) : $this->defaulButtonSettingsObject;  ?>
+            <?php echo esc_textarea(isset($options['button_settings_object']) ? $options['button_settings_object'] : $this->defaulButtonSettingsObject);  ?>
         </textarea>
         <div class="apetail-notice info">
             <p><?php _e( "<b>buttonPosition</b> (required) where on the page trigger button is fixed. Available values: <i>bottomleft</i>, <i>bottomright</i>, <i>topleft</i>, <i>topright</i><br>
@@ -174,7 +174,7 @@ class ApeTail {
     function button_js_html(){
         $options = get_option('apetail_settings_options'); ?>
         <textarea id="under_posts_object" name="apetail_settings_options[under_posts_object]">
-            <?php echo isset($options['under_posts_object']) ? esc_textarea($options['under_posts_object']) : $this->defaultUnderPostsObject;  ?>
+            <?php echo esc_textarea(isset($options['under_posts_object']) ? $options['under_posts_object'] : $this->defaultUnderPostsObject);  ?>
         </textarea>
         <div class="apetail-notice info">
             <p><?php _e( "<b>chatNameAlias</b> (optional) the chat name replacer on the top tab. The same name alias for any post page chat room. If not used, the name of a chat room displayed as post's title.<br>
